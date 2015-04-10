@@ -85,16 +85,17 @@ Online Resume - Jon Cable - Contact
             <h2 class="romanesco-title mtop30">
                 {{Session::get('message')}}
             </h2>
+            @elseif (count($errors) > 0)
+                @foreach($errors->all() as $error)
+                <h2 class="romanesco-title mtop30">
+                    $message->error['{{ $error }}']
+                </h2>
+                @endforeach
             @endif
 
             <div id="map" class="mbottom30 mtop30">
             </div><!-- end map -->
             <div class="separator mbottom20"><a name="_email"></a></div>
-            <ul>
-                @foreach($errors->all() as $error)
-                <li>{{ $error }}</li>
-                @endforeach
-            </ul>
 
             {!! Form::open(array('route' => 'send', 'class' => 'form')) !!}
 
