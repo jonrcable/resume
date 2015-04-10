@@ -97,20 +97,18 @@ Online Resume - Jon Cable - Contact
             </div><!-- end map -->
             <div class="separator mbottom20"><a name="_email"></a></div>
 
-            {!! Form::open(array('route' => 'send', 'class' => 'form')) !!}
-
             <div class="blog-reply">
+            {!! Form::open(array('route' => 'send', 'class' => 'comments-form br-form')) !!}
                 <h2 class="section-title mbottom50">Leave a message</h2>
-                <form action="#" role="form" method="post" class="comments-form br-form">
                     <div class="form-row">
                         <div class="form-line half">
-                            {!! Form::text('name', null,
+                            {!! Form::text('contact_name', null,
                             array('required',
                             'class'=>'form-control',
                             'placeholder'=>'Full Name')) !!}
                         </div>
                         <div class="form-line half">
-                            {!! Form::text('email', null,
+                            {!! Form::text('contact_email', null,
                             array('required',
                             'class'=>'form-control',
                             'placeholder'=>'E-mail address')) !!}
@@ -118,7 +116,7 @@ Online Resume - Jon Cable - Contact
                     </div>
                     <div class="form-row">
                         <div class="form-line full">
-                            {!! Form::text('subject', null,
+                            {!! Form::text('contact_subject', null,
                             array('required',
                             'class'=>'form-control',
                             'placeholder'=>'Subject')) !!}
@@ -126,14 +124,14 @@ Online Resume - Jon Cable - Contact
                     </div>
                     <div class="form-row">
                         <div class="form-line full">
-                            {!! Form::textarea('message', null,
+                            {!! Form::textarea('contact_message', null,
                             array('required',
                             'class'=>'form-control',
                             'placeholder'=>'Message')) !!}
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-default mbottom50" tabindex="5">Send Message</button>
-                </form>
+                    {!! Form::submit('Send Message', array('class' => 'btn btn-default mbottom50')) !!}
+                {!! Form:: close() !!}
             </div>
 
         </div>

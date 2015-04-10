@@ -57,16 +57,17 @@ class ResumeController extends Controller {
 
     public function send(ContactFormRequest $request)
     {
-        \Mail::send('emails.contact',
-            array(
-                'name' => $request->get('name'),
-                'email' => $request->get('email'),
-                'user_message' => $request->get('message')
-            ), function($message)
-            {
-                $message->from('web@joncable.com');
-                $message->to('web@joncable.com', 'Jon Cable')->subject($request->get('subject'));
-            });
+        $data =  [ 'contact_name'  => $request -> input ( 'contact_name' ),
+            'contact_email'  => $request -> input ( 'contact_email' ),
+            'contact_subject'  => $request -> input ( 'contact_subject' ),
+            'contact_message'  => $request -> input ( 'contact_message' )];
+
+        \Mail::send('emails/contact', $data ,  function  ( $message )  use  ( $request )  {
+            $message->from ( 'web@joncable.com' );
+            $message->to ( 'me@joncable.com' ,  'Jon Cable - Resume' );
+            $message->subject ( $request -> input ( 'contact_subject' ) );
+            $message->replyTo ( $request -> input ( 'contact_email' ), $request->input ( 'contact_name' ) );
+        });
 
         return \Redirect::route('contact')
             ->with('message', '$message->delivered[\'Thank you for reaching out!\']');

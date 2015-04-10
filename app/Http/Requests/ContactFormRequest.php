@@ -22,10 +22,10 @@ class ContactFormRequest extends Request {
     public function rules()
     {
         return [
-            'name' => 'required',
-            'subject' => 'required',
-            'email' => 'required|email',
-            'message' => 'required',
+            'contact_name' => 'required',
+            'contact_email' => 'required|email',
+            'contact_subject' => 'required',
+            'contact_message' => 'required',
         ];
     }
 

@@ -1,13 +1,13 @@
 You received a lead from your resume:
 
 <p>
-    Name: {{ $name }}
+    Name: {{ $contact_name }}
 </p>
 
 <p>
-    {{ $email }}
+    Reply To: {{ $contact_email }}
 </p>
 
 <p>
-    {{ $user_message }}
+    {{ $contact_message }}
 </p>
