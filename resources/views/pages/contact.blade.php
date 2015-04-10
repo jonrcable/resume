@@ -60,7 +60,7 @@ Online Resume - Jon Cable - Contact
                 </div>
             </div>
             <div class="col-sm-9">
-                <h2 class="section-title mbottom20 mtop30">_About_Me($_contact)</h2>
+                <h2 class="section-title mbottom20 mtop30">_About_Me ($_contact)</h2>
                 <div class="separator mtop30 mbottom10"></div>
                 <p class="mbottom40">
                     I am currently available for employment and consulting opportunities. I love working with excited professionals on projects with fun, creative and unique concepts. I look forward to hearing about your ideas and projects! If you have made it this far and still have questions let me know.
