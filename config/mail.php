@@ -1,5 +1,10 @@
 <?php
 
+/*
+ * For security this file has been removed from the repo
+ * git update-index --assume-unchanged config/mail.php
+ */
+
 return [
 
 	/*
