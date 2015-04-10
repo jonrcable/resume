@@ -60,7 +60,7 @@ Online Resume - Jon Cable - Contact
                 </div>
             </div>
             <div class="col-sm-9">
-                <h2 class="section-title mbottom20 mtop30">_About_Me ($_contact)</h2>
+                <h2 class="section-title mbottom20 mtop30">_About_Me($_contact)</h2>
                 <div class="separator mtop30 mbottom10"></div>
                 <p class="mbottom40">
                     I am currently available for employment and consulting opportunities. I love working with excited professionals on projects with fun, creative and unique concepts. I look forward to hearing about your ideas and projects! If you have made it this far and still have questions let me know.
@@ -81,31 +81,57 @@ Online Resume - Jon Cable - Contact
 
         <div class="col-sm-9">
 
+            @if(Session::has('message'))
+            <h2 class="romanesco-title mtop30">
+                {{Session::get('message')}}
+            </h2>
+            @endif
+
             <div id="map" class="mbottom30 mtop30">
             </div><!-- end map -->
             <div class="separator mbottom20"><a name="_email"></a></div>
+            <ul>
+                @foreach($errors->all() as $error)
+                <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+
+            {!! Form::open(array('route' => 'send', 'class' => 'form')) !!}
+
             <div class="blog-reply">
-                <h2 class="section-title mbottom50">Leave a reply</h2>
+                <h2 class="section-title mbottom50">Leave a message</h2>
                 <form action="#" role="form" method="post" class="comments-form br-form">
                     <div class="form-row">
                         <div class="form-line half">
-                            <input type="text" name="name" id="cf_name" placeholder="Full name" value="" tabindex="1" required="">
+                            {!! Form::text('name', null,
+                            array('required',
+                            'class'=>'form-control',
+                            'placeholder'=>'Full Name')) !!}
                         </div>
                         <div class="form-line half">
-                            <input type="text" name="email" id="cf_email" placeholder="Email address" value="" tabindex="2" required="">
+                            {!! Form::text('email', null,
+                            array('required',
+                            'class'=>'form-control',
+                            'placeholder'=>'E-mail address')) !!}
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-line full">
-                            <input type="text" name="subject" id="cf_subject" placeholder="Subject" value="" tabindex="3" required="">
+                            {!! Form::text('subject', null,
+                            array('required',
+                            'class'=>'form-control',
+                            'placeholder'=>'Subject')) !!}
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-line full">
-                            <textarea name="message" id="cf_message" cols="30" rows="10" placeholder="Message" tabindex="4" required=""></textarea>
+                            {!! Form::textarea('message', null,
+                            array('required',
+                            'class'=>'form-control',
+                            'placeholder'=>'Message')) !!}
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-default mbottom50" tabindex="5">Add comment</button>
+                    <button type="submit" class="btn btn-default mbottom50" tabindex="5">Send Message</button>
                 </form>
             </div>
 

@@ -21,7 +21,11 @@ Route::get('education', 'ResumeController@education');
 
 Route::get('music', 'ResumeController@music');
 
-Route::get('contact', 'ResumeController@contact');
+Route::get('contact',
+    ['as' => 'contact', 'uses' => 'ResumeController@contact']);
+
+Route::post('send',
+    ['as' => 'send', 'uses' => 'ResumeController@send']);
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

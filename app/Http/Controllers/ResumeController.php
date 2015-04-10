@@ -1,5 +1,7 @@
 <?php namespace App\Http\Controllers;
 
+use App\Http\Requests\ContactFormRequest;
+
 class ResumeController extends Controller {
 
     /*
@@ -51,6 +53,12 @@ class ResumeController extends Controller {
     public function contact()
     {
         return view('pages/contact');
+    }
+
+    public function send(ContactFormRequest $request)
+    {
+        return \Redirect::route('contact')
+            ->with('message', '$message->delivered[\'Thank you for reaching out!\']');
     }
 
     public function music()
