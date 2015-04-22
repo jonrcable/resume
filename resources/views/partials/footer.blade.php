@@ -36,29 +36,24 @@
                 <h3>#!/go/social</h3>
                 <div class="social mtop25 mbottom30 clearfix">
                     <ul class="reset-list">
-                        <li class="ico-twitter animation">
-                            <a href="#">
-                                <span class="icon-twitter"></span>
+                        <li class="ico-google animation">
+                            <a href="https://www.linkedin.com/in/joncable" target="_blank">
+                                <span class="icon-linkedin"></span>
                             </a>
                         </li>
-                        <li class="ico-facebook animation">
-                            <a href="#">
+                        <li class="ico-google animation">
+                            <a href="https://github.com/jonrcable">
+                                <span class="icon-github"></span>
+                            </a>
+                        </li>
+                        <li class="ico-google animation">
+                            <a href="https://www.facebook.com/jcjunglist">
                                 <span class="icon-facebook"></span>
                             </a>
                         </li>
                         <li class="ico-google animation">
-                            <a href="#">
+                            <a href="https://plus.google.com/u/0/109710116447932648878" target="_blank">
                                 <span class="icon-googleplus"></span>
-                            </a>
-                        </li>
-                        <li class="ico-pinterest animation">
-                            <a href="#">
-                                <span class="icon-pinterest"></span>
-                            </a>
-                        </li>
-                        <li class="ico-dribbble animation">
-                            <a href="#">
-                                <span class="icon-dribbble"></span>
                             </a>
                         </li>
                     </ul>

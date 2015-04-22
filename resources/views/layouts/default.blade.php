@@ -124,46 +124,9 @@
 <script src="cleanlab/js/cleanlab_script.js"></script>
 
 <!-- Custom Scrips loaded on this page -->
-<script src="cleanlab/js/jquery.themepunch.plugins.min.js"></script>
-<script src="cleanlab/js/jquery.themepunch.revolution.min.js"></script>
 <script src="cleanlab/js/jquery.gmap.min.js"></script>
 <script src="cleanlab/js/jquery.knob.js"></script>
 
-<script type="text/javascript"> /* Revolution Slider */
-    var revapi;
-    jQuery(document).ready(function() {
-        revapi = jQuery('.tp-banner').revolution(
-            {
-                delay:9000,
-                startwidth:1170,
-                startheight:500,
-                hideThumbs:10,
-                fullWidth:"on",
-                forceFullWidth:"on",
-            });
-    });
-</script>
-<script type="text/javascript">/* OWL Carousel */
-    $(document).ready(function() {
-        $(".testimonials2-carousel").owlCarousel({
-
-            navigation : false, // Show next and prev buttons
-            autoPlay: true,
-            slideSpeed : 300,
-            paginationSpeed : 400,
-            singleItem: true,
-            pagination: false,
-            transitionStyle : "fade"
-
-            // "singleItem:true" is a shortcut for:
-            // items : 1,
-            // itemsDesktop : false,
-            // itemsDesktopSmall : false,
-            // itemsTablet: false,
-            // itemsMobile : false
-        });
-    });
-</script>
 <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
 <script type="text/javascript"> /* Google Map */
     jQuery(document).ready(function() {
@@ -307,105 +270,6 @@
             style: mapStyles
         });
 
-    });
-</script>
-<script type="text/javascript">
-    var owl;
-
-    $(document).ready(function () {
-
-        owl = $("#single-project");
-
-        owl.owlCarousel({
-
-            navigation: true, // Show next and prev buttons
-            slideSpeed: 300,
-            paginationSpeed: 400,
-            singleItem: true,
-            items: 4,
-            afterInit: afterOWLinit, // do some work after OWL init
-            navigationText: [
-                "<i class='icon-angle-left animation'></i>",
-                "<i class='icon-angle-right animation'></i>"
-            ],
-        });
-
-
-
-
-        function afterOWLinit() {
-
-            // adding A to div.owl-page
-            $('.owl-controls .owl-page').append('<a class="item-link" href="#"/>');
-
-            var pafinatorsLink = $('.owl-controls .item-link');
-
-            /**
-             * this.owl.userItems - it's your HTML <div class="item"><img src="http://www.ow...t of us"></div>
-             */
-            $.each(this.owl.userItems, function (i) {
-
-                $(pafinatorsLink[i])
-                    // i - counter
-                    // Give some styles and set background image for pagination item
-                    .css({
-                        'background': 'url(' + $(this).find('img').attr('src') + ') center center no-repeat',
-                        '-webkit-background-size': 'cover',
-                        '-moz-background-size': 'cover',
-                        '-o-background-size': 'cover',
-                        'background-size': 'cover'
-                    })
-                    // set Custom Event for pagination item
-                    .click(function () {
-                        owl.trigger('owl.goTo', i);
-                    });
-
-            });
-
-
-
-            // add Custom PREV NEXT controls
-            $('.owl-pagination').prepend('<a href="#prev" class="prev-owl"/>');
-            $('.owl-pagination').append('<a href="#next" class="next-owl"/>');
-
-
-            // set Custom event for NEXT custom control
-            $(".next-owl").click(function () {
-                owl.trigger('owl.next');
-            });
-
-            // set Custom event for PREV custom control
-            $(".prev-owl").click(function () {
-                owl.trigger('owl.prev');
-            });
-
-        }
-
-    });
-</script>
-<script type="text/javascript">/* OWL Carousel */
-    $(document).ready(function() {
-        $("#recent-works2-carousel").owlCarousel({
-
-            navigation : true, // Show next and prev buttons
-            slideSpeed : 300,
-            paginationSpeed : 400,
-            singleItem : false,
-            pagination : false,
-            items : 4,
-            navigationText: [
-                "<i class='icon-angle-left animation'></i>",
-                "<i class='icon-angle-right animation'></i>"
-            ],
-
-
-            // "singleItem:true" is a shortcut for:
-            // items : 1,
-            // itemsDesktop : false,
-            // itemsDesktopSmall : false,
-            // itemsTablet: false,
-            // itemsMobile : false
-        });
     });
 </script>
 

@@ -11,29 +11,24 @@
             </div>
             <div class="col-sm-3">
                 <ul class="info-right reset-list">
-                    <li class="ico-twitter animation">
-                        <a href="#">
-                            <span class="icon-twitter"></span>
+                    <li class="ico-google animation">
+                        <a href="https://www.linkedin.com/in/joncable" target="_blank">
+                            <span class="icon-linkedin"></span>
                         </a>
                     </li>
-                    <li class="ico-facebook animation">
-                        <a href="#">
+                    <li class="ico-google animation">
+                        <a href="https://github.com/jonrcable">
+                            <span class="icon-github"></span>
+                        </a>
+                    </li>
+                    <li class="ico-google animation">
+                        <a href="https://www.facebook.com/jcjunglist">
                             <span class="icon-facebook"></span>
                         </a>
                     </li>
-                    <li class="ico-pinterest animation">
-                        <a href="#">
-                            <span class="icon-pinterest"></span>
-                        </a>
-                    </li>
-                    <li class="ico-instagram animation">
-                        <a href="#">
-                            <span class="icon-instagram"></span>
-                        </a>
-                    </li>
-                    <li class="ico-dribbble animation">
-                        <a href="#">
-                            <span class="icon-dribbble"></span>
+                    <li class="ico-google animation">
+                        <a href="https://plus.google.com/u/0/109710116447932648878" target="_blank">
+                            <span class="icon-googleplus"></span>
                         </a>
                     </li>
                 </ul>
