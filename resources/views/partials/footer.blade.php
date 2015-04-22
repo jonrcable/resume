@@ -65,7 +65,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-xs-12">
-                    <p class="copyright">An application built on Laravel5, Bootstrap3, jQuery2, HTML5, CSS3. <br /> Developed with <a href="https://laravel.com" target="_blank" >Laravel</a> &nbsp; By <strong>Jon Cable</strong>. All Rights Reserved.</p>
+                    <p class="copyright">An application built on Laravel5, Bootstrap3, jQuery2, HTML5, CSS3. <br /> Developed with <a href="https://laravel.com" target="_blank" >Laravel</a>. By <strong>Jon Cable</strong>. All Rights Reserved.</p>
                 </div>
                 <div class="col-sm-6 col-xs-12">
                     <div class="social-buttons">
