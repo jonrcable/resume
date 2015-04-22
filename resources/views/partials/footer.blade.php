@@ -63,44 +63,15 @@
     </div>
     <div class="bottom-footer">
         <div class="container">
-            <div class="row ptop10">
-                <div class="col-sm-6 col-xs-12 mbottom20">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12">
                     <p class="copyright">An application built on Laravel5, Bootstrap3, jQuery2, HTML5, CSS3. <br /> Developed with <a href="https://laravel.com" target="_blank" >Laravel</a> &nbsp; By <strong>Jon Cable</strong>. All Rights Reserved.</p>
                 </div>
                 <div class="col-sm-6 col-xs-12">
                     <div class="social-buttons">
-                        <div class="facebook-button">
-                            <!-- Change this iframe with your own. -->
-                            <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FEnvatoStudio&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
-                        </div>
-                        <div class="twitter-button">
-                            <!-- Change data-via to your own. -->
-                            <a href="https://twitter.com/share" class="twitter-share-button" data-via="BogdanStw">Tweet</a>
-                            <script>
-                                !function(d,s,id){
-                                    var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
-                                    if(!d.getElementById(id)){
-                                        js=d.createElement(s);
-                                        js.id=id;
-                                        js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-                            </script>
-                        </div>
-                        <div class="google-button">
-                            <!-- Place this tag where you want the +1 button to render. -->
-                            <div class="g-plusone" data-size="medium"></div>
-                            <!-- Place this tag after the last +1 button tag. -->
-                            <script type="text/javascript">
-                                (function() {
-                                    var po = document.createElement('script');
-                                    po.type = 'text/javascript';
-                                    po.async = true;
-                                    po.src = 'https://apis.google.com/js/plusone.js';
-                                    var s = document.getElementsByTagName('script')[0];
-                                    s.parentNode.insertBefore(po, s);
-                                }
-                                    )();
-                            </script>
-                        </div>
+                        <span class='st_linkedin_hcount' displayText='LinkedIn'></span>
+                        <span class='st_googleplus_hcount' displayText='Google +'></span>
+                        <span class='st_facebook_hcount' displayText='Facebook'></span>
                     </div>
                 </div>
             </div>
